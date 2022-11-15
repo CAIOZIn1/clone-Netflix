@@ -1,0 +1,33 @@
+.movieRow {
+    margin-bottom: 30px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 3vw;
+        margin: 0px 0px 0px 30px;
+    }
+
+    .movieRowListArea {
+        overflow-x: hidden;
+
+        .movieRowList{
+            width: 99999999px;
+        }
+
+        .movieRowItem{
+            display: inline-block;
+            width: 200px;
+
+            img{
+                width: 100%;
+                transform: scale(0.9);
+                transition: all ease-out 500ms;
+            }
+
+            img:hover {
+                transform: scale(1);
+                cursor: pointer;
+            }
+        }
+    }
+}
