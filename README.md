@@ -2,9 +2,11 @@
 
 ![logo netflix](./src/assets/img/logo.png)
 
->projeto em desenvolvimento
+>projeto finalizado
 
 <h2>Projeto desenvolvido utilizando a biblioteca React com o intuito de praticar e aprofundar conhecimentos referente a linguagem e, concomitantemente, suas dependências</h2>
+
+>clique <a href='https://clone-netflix-one-xi.vercel.app/'> aqui </a> para visitar o site
 
 <h3> Baixar a extensão do Scss:</h3>
 

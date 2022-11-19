@@ -1,5 +1,14 @@
+.movieRow:hover{
+    .movieRowLeft, .movieRowRight{
+        opacity: 1;
+        
+    }
+}
+
+
 .movieRow {
     margin-bottom: 30px;
+    
 
     h2 {
         font-weight: 700;
@@ -7,11 +16,34 @@
         margin: 0px 0px 0px 30px;
     }
 
+    .movieRowLeft, .movieRowRight{
+        position: absolute;
+        width: 40px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+        transition: all ease-in-out 500ms ;
+    }
+
+    .movieRowLeft{
+        left: 0;
+    }
+
+    .movieRowRight{
+        right: 0;
+    }
+
     .movieRowListArea {
         overflow-x: hidden;
 
         .movieRowList{
-            width: 99999999px;
+            transition: all ease 1s;
         }
 
         .movieRowItem{
@@ -28,6 +60,14 @@
                 transform: scale(1);
                 cursor: pointer;
             }
+        }
+    }
+}
+
+@media (max-width:760px) {
+    .movieRow {
+        .movieRowLeft, .movieRowRight{
+            opacity: 1;
         }
     }
 }
